@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SimplePreferenceScreen</string>
+    <string name="username">Current Username</string>
+    <string name="current_value">Current Value</string>
+</resources>

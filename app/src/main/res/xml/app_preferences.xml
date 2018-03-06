@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.preference.PreferenceCategory android:title="User Settings">
+
+        <android.support.v7.preference.EditTextPreference
+            android:key="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/username"
+            android:dialogLayout="@layout/preference_dialog_layout"/>
+    </android.support.v7.preference.PreferenceCategory>
+    <android.support.v7.preference.PreferenceCategory android:title="Application Settings"
+        >
+
+        <android.support.v7.preference.CheckBoxPreference
+            android:defaultValue="false"
+            android:key="2"
+            android:title="Receive Notifications" />
+
+        <com.galileo.micromaster.simplepreferencescreen.NumberPickerPreference
+            android:key="3"
+            android:title="@string/current_value"
+            android:summary="0"
+            style="@style/AppPreference.DialogPreference"/>
+
+    </android.support.v7.preference.PreferenceCategory>
+</android.support.v7.preference.PreferenceScreen>
